@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kane Adams - Front-End Developer</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Front-End Developer portfolio for Kane Adams. Projects: Watchlist & Profit Calculator, Stat Learning Hub." />
+  <meta name="author" content="Kane Adams" />
+  <link rel="canonical" href="https://github.com/TraineThought" />
+
+  <!-- Theme Color (mobile browser UI) -->
+  <meta name="theme-color" content="f6f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="0e1117" media="(prefers-color-scheme: dark)">
+
+  <!-- Social (Open Graph) -->
+  <meta property="og:title" content="Kane Adams - Front-End Developer" />
+  <meta property="og:description" content="Selected front-end projects, links, and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/og-img.png" />
+
+  <link rel="icon" href="img/favicon.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#projects">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Kane Adams home">
+      <span class="brand__dot"></span>
+      <span class="brand__text">Kane Adams</span>
+    </a>
+
+    <button id="theme-toggle" class="btn" type="button" aria-pressed="false">
+      🌙 Dark
+    </button>
+
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="https://github.com/TraineThought" class="nav-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__content">
+      <h1>Hi, I'm Kane Adams</h1>
+      <p>
+        Front-End Developer passionate about building clean, interactive, and
+        responsive web applications. I create tools and resources that make
+        learning and trading easier.
+      </p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section" aria-labelledby="projects-title">
+    <h2 id="projects-title">Projects</h2>
+
+    <div class="grid projects-grid">
+      <!-- Project 1 -->
+      <article class="card project">
+        <figure class="project__thumb">
+          <img src="img/projects/watchlist-profit.png" alt="Screenshot of Watchlist & Profit Calculator app" loading="lazy">
+        </figure>
+        <div class="project__body">
+          <h3>Watchlist & Profit Calculator</h3>
+          <p>A web app to track tickers and quickly estimate trade outcomes with risk/reward. Built with vanilla JS and accessible forms.</p>
+          <ul class="pill-list" aria-label="Tech stack">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <div class="project__links">
+            <a class="btn btn--primary" href="https://trainethought.github.io/strat-dashboard/" target="_blank" rel="noopener">Live</a>
+            <a class="btn" href="https://github.com/TraineThought/strat-dashboard" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card project">
+        <figure class="project__thumb">
+          <img src="img/projects/learning-hub.png" alt="Screenshot of Strat Learning Hub site" loading="lazy">
+        </figure>
+        <div class="project__body">
+          <h3>Strat Learning Hub</h3>
+          <p>Educational site with tutorial toggles, chart lightbox, curated videos, and downloable PDFs. Dynamic list loading with graceful fallbacks.</p>
+          <ul class="pill-list" aria-label="Tech stack">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <div class="project__links">
+            <a class="btn btn--primary" href="https://trainethought.github.io/strat-learning-hub/" target="_blank" rel="noopener">Live</a>
+            <a class="btn" href="https://github.com/TraineThought/strat-learning-hub" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 (Live only)-->
+      <article class="card project">
+        <figure class="project__thumb">
+          <img src="img/projects/task-tracker.png"
+                alt="Screenshot of Task Tracker App"
+                loading="lazy">
+        </figure>
+        <div class="project__body">
+          <h3>Task Tracker</h3>
+          <p>A simple to-do app to add, schedule, and remove tasks.
+            Built with vanilla JavaScript for dynamic form handling,
+            task rendering, and reminders. Deployed with Netlify.</p>
+          <ul class="pill-list" aria-label="Tech stack">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        </ul>
+        <div class="project__links">
+          <a class="btn btn--primary" href="https://track-tasks-practice.netlify.app/"
+            target="_blank" rel="noopener">Live</a>
+      <!-- Optional: add this later -->
+      <!-- <a class="btn disabled" href="#">Code (Coming Soon)</a> -->
+      </div>
+    </div>
+  </article>
+
+      <!-- Project 4 (Live only)-->
+      <article class="card project" aria-describedby="wx-archived-note">
+        <figure class="project__thumb">
+          <img src="img/projects/weather-forecast.png"
+               alt="Screenshot of Weather Forecast app UI" loading="lazy">
+          <span class="badge badge--archived" aria-label="Archived project">Archived</span>
+        </figure>
+
+        <div class="project__body">
+          <h3>Weather Forecast <span class="muted">(Archived)</span></h3>
+          <p id="wx-archived-note">
+            Search a city to view current conditions and daily highs/lows.
+            Built in React with async fetch, loading/error states, and responsive UI.
+            Demo is archived because the orginal CORS proxy was retired.
+          </p>
+
+          <ul class="pill-list" aria-label="Tech stack">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+
+          <div class="project__links">
+            <!-- <a class="btn" href="https://react-weather-api-practice.netlify.app/" target="_blank" rel="noopener">Code</a> -->
+            <a class="btn btn--muted" href="#" aria-disabled="true" tabindex="-1"
+              title="Demo archived due to retired API proxy">Live (archived)</a>
+            </div>
+          </div>
+        </article>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section" aria-labelledby="about-title">
+    <h2 id="about-title">About</h2>
+    <div class="about">
+      <p>
+        Front-End Developer with a focus on accessible UI and crisp interactions.<br>
+        I enjoy building tools for traders and simplifying complex topics for the web.
+      </p>
+      <ul class="pill-list" aria-label="Skills">
+        <li>Semantic HTML</li>
+        <li>Modern CSS</li>
+        <li>JavaScript</li>
+        <li>Accessibility (a11y)</li>
+        <li>Performance</li>
+        <li>Git/GitHub</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section">
+    <h2>Contact</h2>
+    <p>If you'd like to get in touch, feel free to reach out:</p>
+    <ul>
+      <li>📧 <a href="mailto:biggatraine@hotmail.com">biggatraine@hotmail.com</a></li>
+      <li>💻 <a href="https://github.com/TraineThought" target="_blank" rel="noopener">github.com/TraineThought</a></li>
+    </ul>
+  </section>
+
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Kane Adams. All rights reserved.</small>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
